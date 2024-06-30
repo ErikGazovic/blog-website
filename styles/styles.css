@@ -502,6 +502,7 @@ h1 {
         width: 80%;
         margin-bottom: 0px;
         margin-top: 30px;
+        border: 2px solid red;
     }
 
     .content .head-text h3 {
@@ -547,9 +548,13 @@ h1 {
         text-align: center;
     }
 
+    .content .head-text {
+        width: 400px;
+    }
+
     .content .head-text h1 {
-        font-size: 4.8rem;
-        width: 80%;
+        font-size: 4.5rem;
+        width: 400px;
         margin-bottom: 0px;
         margin-top: 30px;
     }
