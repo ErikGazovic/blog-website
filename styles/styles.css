@@ -413,11 +413,12 @@ h1 {
         height: 120px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .nav-bar .logo {
         height: 48px;
-        width: 100%;
+        width: 400px;
         justify-content: center;
         margin-top: 7px;
         margin-left: 0px;
@@ -429,6 +430,20 @@ h1 {
         margin: 0;
         height: 45px;
     }
+
+    .nav-bar .menu h4 {
+        font-size: 15px;
+        width: 50px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-bar .menu .get-bigger {
+        width: 100px;
+        text-align: center;
+    }
+
+    
        
     .nav-bar .nav-line {
         width: 90%; height: 1px; 
@@ -486,11 +501,12 @@ h1 {
         font-size: 6rem;
         width: 80%;
         margin-bottom: 0px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .content .head-text h3 {
         font-size: 1.7rem;
+        width: 600px;
     }
 
     .content .middle-line {
@@ -498,10 +514,74 @@ h1 {
     }
 
     .content .middle-line .small-line {
-        width: 50px;
+        width: 45px;
     }
     .content .coffee-img img {
         width: 450px;
         height: auto;
+    }
+
+    .content .coffee-img {
+        width: 450px;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-bar .menu {
+        width: 400px;
+        justify-content: center;
+        margin: 0;
+        height: 45px;
+    }
+
+    .nav-bar .menu h4 {
+        font-size: 10px;
+        width: 50px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-bar .menu .get-bigger {
+        width: 50px;
+        text-align: center;
+    }
+
+    .content .head-text h1 {
+        font-size: 4.8rem;
+        width: 80%;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+
+    .content .head-text h3 {
+        font-size: 1.4rem;
+        width: 350px;
+    }
+
+    .content .middle-line {
+        gap: 20px;
+    }
+
+    .content .middle-line .small-line {
+        width: 42px;
+    }
+    .content .coffee-img img {
+        width: 300px;
+        height: auto;
+    }
+
+    .content .coffee-img {
+        width: 350px;
+        height: auto;
+    }
+
+    .footer-container .media-icons {
+        width: 400px;
+        gap: 30px;
+    }
+
+    .footer-container .footer-text {
+        font-size: 15px;
     }
 }
