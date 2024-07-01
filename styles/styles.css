@@ -121,6 +121,7 @@ a:hover {
     align-items: center;
     margin-top: 85px;
     gap: 20px;
+    height: 72vh;
 }
 
 .head-text {
@@ -175,15 +176,76 @@ h1 {
     width: 600px;
 }
 
-.content {
+.content-about {
     height: 72vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    gap: 20px;
 }
+
+.head-text-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    border: 2px solid red;
+}
+
+.head-text-about h1 {
+    text-align: center;
+    width: 100%;
+    border: 2px solid red;
+
+}
+
+.head-text-about .content-about-p {
+    text-align: center;
+    width: 70%;
+    font-size: 22px;
+    border: 2px solid red;
+}
+
+.head-text-about h3 {
+    border: 2px solid red;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.about-line {
+    height: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.contact-p {
+    font-size: 25px;    
+}
+
+@media (max-width: 1600px) {
+    .head-text-about .content-about-p {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1550px) {
     .content .coffee-img {
         height: 450px;
     }
     .content .coffee-img img {
         height: 450px;
+    }
+
+    .head-text-about .content-about-p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .head-text-about .content-about-p {
+        width: 100%;
     }
 }
 
@@ -214,9 +276,12 @@ h1 {
     .content {
         gap: 15px;
     }
+
+    
 }
 
 @media (max-width: 1220px) {
+    
 
     .content .head-text {
         width: 420px;
@@ -226,6 +291,21 @@ h1 {
         font-size: 5.5rem;
         width: 420px;
     }
+
+    .content-about .head-text-about h1 {
+        font-size: 6rem;
+        width: 420px;
+    }
+
+    .content-about .head-text-about .content-about-p {
+        font-size: 19px;
+    }
+
+    .content-about .head-text-about .contact-p {
+        font-size: 25px;
+    }
+
+    
 
     .content .head-text h3 {
         font-size: 1.4rem;
@@ -256,6 +336,7 @@ h1 {
 
 @media (max-width: 1050px) {
 
+    
     .content .head-text {
         width: 420px;
     }
@@ -316,6 +397,8 @@ h1 {
 }
 
 @media (max-width: 950px) {
+    
+
     .nav-bar .logo h4 {
         font-size: 25px;
     }
@@ -404,7 +487,23 @@ h1 {
     }
 }
 
+@media (max-width: 900px) {
+   
+    .content-about .head-text-about .content-about-p {
+        font-size: 17px;
+    }
+
+    .content-about .head-text-about .contact-p {
+        font-size: 25px;
+    }
+}
+
 @media (max-width: 800px) {
+    
+    
+    .head-text-about {
+        margin-top: 40px;
+    }
     .nav-bar .logo h4 {
         font-size: 25px;
     }
@@ -457,6 +556,8 @@ h1 {
     }
 }
 
+
+
 @media (max-width: 750px) {
     .content .head-text {
         margin-top: 50px;
@@ -489,6 +590,18 @@ h1 {
     .content .coffee-img img {
         width: 500px;
     }
+}
+
+@media (max-width: 740px) {
+
+    .content-about {
+        height: auto;
+    }
+
+    .content-contact {
+        height: 72vh;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -588,4 +701,25 @@ h1 {
     .footer-container .footer-text {
         font-size: 15px;
     }
+
+    .content-about .head-text-about h1 {
+        font-size: 4.5rem;
+        width: 400px;
+    }
+
+    .content-about .head-text-about .contact-h1 {
+        font-size: 4.5rem;
+        width: 400px;
+    }
+
+    .content-about .head-text-about .contact-h1 {
+        font-size: 1.2rem;
+        width: 400px;
+    }
+
+    .content-about .head-text-about .contact-p {
+        width: 400px;
+        font-size: 22px;
+    }
+    
 }
