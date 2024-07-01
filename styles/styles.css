@@ -189,13 +189,11 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
-    border: 2px solid red;
 }
 
 .head-text-about h1 {
     text-align: center;
     width: 100%;
-    border: 2px solid red;
 
 }
 
@@ -203,11 +201,9 @@ h1 {
     text-align: center;
     width: 70%;
     font-size: 22px;
-    border: 2px solid red;
 }
 
 .head-text-about h3 {
-    border: 2px solid red;
     text-align: center;
     font-size: 1.5rem;
 }
@@ -217,7 +213,6 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
 }
 
 .contact-p {
@@ -708,18 +703,18 @@ h1 {
     }
 
     .content-about .head-text-about .contact-h1 {
-        font-size: 4.5rem;
+        font-size: 4.2rem;
         width: 400px;
     }
 
-    .content-about .head-text-about .contact-h1 {
+    .content-about .head-text-about h3 {
         font-size: 1.2rem;
-        width: 400px;
+        width: 380px;
     }
 
     .content-about .head-text-about .contact-p {
-        width: 400px;
-        font-size: 22px;
+        width: 300px;
+        font-size: 19px;
     }
     
 }
