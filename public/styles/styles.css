@@ -189,13 +189,11 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     width: 70%;
-    border: 2px solid red;
 }
 
 .head-text-about h1 {
     text-align: center;
     width: 100%;
-    border: 2px solid red;
 
 }
 
@@ -203,11 +201,9 @@ h1 {
     text-align: center;
     width: 70%;
     font-size: 22px;
-    border: 2px solid red;
 }
 
 .head-text-about h3 {
-    border: 2px solid red;
     text-align: center;
     font-size: 1.5rem;
 }
@@ -217,11 +213,113 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
 }
 
 .contact-p {
     font-size: 25px;    
+}
+
+.div-form {
+    width: 830px;
+    margin-right: -170px;
+}
+form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+label {
+    width: 100%;
+}
+
+input {
+    width: 300px;
+    border: 3px solid #cc0000;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #e9ded6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+textarea {
+    width: 90%;
+    border: 1.5px solid #cc0000;
+    border-radius: 5px;
+    height: 250px;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.save-blog-btn {
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    border: 3px solid #cc0000;
+    border-radius: 20px;
+    font-family: "Playwrite ZA", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    padding: 0px 8px 50px 5px;
+    margin-top: 20px;
+    background-color: #f2ebe6;
+    transition-duration: 0.4s;
+}
+  
+  .save-blog-btn:hover {
+    background-color: #cc0000;
+    color: white;
+  }
+
+h2 {
+    font-size: 30px;
+}
+
+.content-create {
+    height: auto;
+    display: flex;
+    justify-content: end;
+    margin-top: 85px;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100.25%;
+}
+
+.content-create img {
+    width: 600px;
+    height: 450px;
+    z-index: -1;
+}
+
+.create-head-text {
+    margin: 0px 50px 400px -40px;
+}
+
+.create-head-text > h2 {
+    font-size: 60px;
+}
+
+.create-head-text > h5 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.middle-line-create {
+        display: flex;
+        gap: 1rem;
+}
+@media (max-width: 1650px) {
+
+    .content-create .div-form {
+        width: 750px;
+    }
 }
 
 @media (max-width: 1600px) {
@@ -246,6 +344,13 @@ h1 {
 @media (max-width: 1500px) {
     .head-text-about .content-about-p {
         width: 100%;
+    }
+}
+
+@media (max-width: 1580px) {
+
+    .content-create .div-form {
+        width: 700px;
     }
 }
 
@@ -278,6 +383,26 @@ h1 {
     }
 
     
+}
+
+@media (max-width: 1530px) {
+
+    .content-create .create-head-text h2 {
+        font-size: 50px;
+    }
+
+    .content-create .create-head-text h5 {
+        font-size: 18px;
+    }
+
+    .content-create .div-form {
+        margin-right: -90px;
+    }
+
+    .content-create img {
+        width: 500px;
+        height: 325px;
+    }
 }
 
 @media (max-width: 1220px) {
@@ -334,6 +459,26 @@ h1 {
 
 }
 
+@media (max-width: 1450px) {
+    .content-create .div-form {
+        width: 600px;
+    }
+
+    .content-create .div-form h2 {
+        font-size: 20px;
+    }
+
+    .content-create input {
+        font-size: 20px;
+    }
+
+    .content-create .save-blog-btn {
+        width: 100px;
+        height: 30px;
+        padding-bottom: 40px;
+    }
+}
+
 @media (max-width: 1050px) {
 
     
@@ -373,6 +518,13 @@ h1 {
         height: 300px;
     }
 
+}
+
+@media (max-width: 1350px) {
+
+    .content-create .create-head-text {
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -471,6 +623,98 @@ h1 {
 
 }
 
+@media (max-width: 1300px) {
+    .content-create .div-form {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content-create .div-form {
+        width: 500px;
+    }
+
+    .content-create img {
+        width: 390px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content-create .create-head-text h2  {
+        font-size: 40px;
+    }
+
+    .content-create .create-head-text h5  {
+        font-size: 15px;
+    }
+
+    .content-create .create-head-text .middle-line-create .small-line-create {
+        width: 20px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .content-create .div-form {
+        margin-right: -120px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .middle-line-create {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .content-create .create-head-text .middle-line-create .small-line-create {
+        width: 40px;
+    }
+
+    .content-create {
+        flex-wrap: wrap; 
+    }
+
+    .content-create .create-head-text {
+        width: 100%;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .content-create .create-head-text h2 {
+        font-size: 100px;
+    }
+
+    .content-create .create-head-text h5 {
+        font-size: 35px;
+    }
+
+    .content-create .div-form {
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 50px;
+    }
+
+    .content-create .div-form h2 {
+        font-size: 30px;
+    }
+
+    .content-create img {
+        width: 80%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .content-create .div-form .save-blog-btn {
+        width: 220px;
+        height: 100px;
+        font-size: 50px;
+        border: 5px solid #cc0000;
+    }
+}
+
 @media (max-width: 900px) {
     .nav-bar .logo {
         gap: 10px;
@@ -485,10 +729,7 @@ h1 {
     .nav-bar .menu {
         margin-right: 20px;
     }
-}
 
-@media (max-width: 900px) {
-   
     .content-about .head-text-about .content-about-p {
         font-size: 17px;
     }
@@ -497,7 +738,6 @@ h1 {
         font-size: 25px;
     }
 }
-
 @media (max-width: 800px) {
     
     
@@ -542,7 +782,6 @@ h1 {
         text-align: center;
     }
 
-    
        
     .nav-bar .nav-line {
         width: 90%; height: 1px; 
@@ -553,6 +792,10 @@ h1 {
     display: flex;
     justify-content: center;
     width: 100%;
+    }
+
+    .content-create {
+        margin-top: 120px;
     }
 }
 
@@ -590,6 +833,17 @@ h1 {
     .content .coffee-img img {
         width: 500px;
     }
+
+    .content-create .div-form .save-blog-btn {
+        width: 150px;
+        height: 70px;
+        font-size: 35px;
+        border: 4px solid #cc0000;
+    }
+
+    .content-create .create-head-text .middle-line-create .small-line-create {
+        width: 30px;
+    }
 }
 
 @media (max-width: 740px) {
@@ -602,10 +856,26 @@ h1 {
         height: 72vh;
     }
 
+    .content-create .create-head-text h2 {
+        font-size: 70px;
+    }
+
+    .content-create .create-head-text h5 {
+        font-size: 25px;
+    }
+
+    .content-create .div-form h2 {
+        font-size: 25px;
+    }
+
+    .content-create .create-head-text h5 {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 600px) {
 
+    
     .content .head-text {
         margin-top: 50px;
     }
@@ -638,7 +908,22 @@ h1 {
         width: 450px;
         height: auto;
     }
+
+    .content-create .div-form .save-blog-btn {
+        width: 130px;
+        height: 60px;
+        font-size: 30px;
+        border: 4px solid #cc0000;
+    }
 }
+
+
+
+
+
+
+
+
 
 @media (max-width: 400px) {
     .nav-bar .menu {
@@ -646,6 +931,10 @@ h1 {
         justify-content: center;
         margin: 0;
         height: 45px;
+    }
+
+    .content-create .create-head-text .middle-line-create .small-line-create {
+        width: 25px;
     }
 
     .nav-bar .menu h4 {
@@ -708,18 +997,39 @@ h1 {
     }
 
     .content-about .head-text-about .contact-h1 {
-        font-size: 4.5rem;
+        font-size: 4.2rem;
         width: 400px;
     }
 
-    .content-about .head-text-about .contact-h1 {
+    .content-about .head-text-about h3 {
         font-size: 1.2rem;
-        width: 400px;
+        width: 380px;
     }
 
     .content-about .head-text-about .contact-p {
-        width: 400px;
-        font-size: 22px;
+        width: 300px;
+        font-size: 19px;
     }
     
+    .content-create .create-head-text h2 {
+        font-size: 50px;
+    }
+
+    .content-create .create-head-text h5 {
+        font-size: 20px;
+    }
+
+    .content-create .div-form h2 {
+        font-size: 18px;
+    }
+
+    .content-create .create-head-text h5 {
+        font-size: 18px;
+    }
+    .content-create .div-form .save-blog-btn {
+        width: 120px;
+        height: 55px;
+        font-size: 27px;
+        border: 4px solid #cc0000;
+    }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../public/styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+ZA:wght@100..400&display=swap" rel="stylesheet">
@@ -20,44 +20,54 @@
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <img src="images/blog-icon.png" alt="blog icon">
+                <img src="../public/images/blog-icon.png" alt="blog icon">
                 <a href="#"><h4>Blog Website</h4></a>
             </div>
             <div class="nav-line-box"><div class="nav-line"></div></div>
             <div class="menu">
                 <a href="./index.html"><h4>Home</h4></a>
                 <a href="#"><h4 class="get-bigger">All Blogs</h4></a>
-                <a href="../views/create-blog.ejs"><h4 class="get-bigger">Create Blog</h4></a>
+                <a href="#"><h4 class="get-bigger">Create Blog</h4></a>
                 <a href="./contact.html"><h4>Contact</h4></a>
                 <a href="./about.html"><h4>About</h4></a>
             </div>
         </div>
     </header>
-    <div class="content">
-        <div class="head-text">
-            <h1><span style="color: #cc0000;">Blog</span> Website</h1>
-            <h3>Daily blogs for your daily cup of coffee ☕</h3>
+        <div class="content-create">
+            <div class="create-head-text">
+                <h2><span style="color: #cc0000;">Create</span> Blog</h2>
+                <h5>Write your ideas, stories etc...</h5>
+                <div class="middle-line-create">
+                    <div class="small-line small-line-create"></div>
+                    <div class="small-line small-line-create"></div>
+                    <div class="small-line small-line-create"></div>
+                    <div class="small-line small-line-create"></div>
+                    <div class="small-line small-line-create"></div>
+                </div>
+            </div>
+            <div class="div-form">
+                <form action="#" method="post">
+                    <label for="fname"><h2><span style="color: #cc0000;">Title</span> Of The Blog:</label></h2>
+                    <div><input type="text" id="title" name="title"><br><br></div>
+                    <label for="fname"><h2><span style="color: #cc0000;">Content</span> Of The Blog:</label></h2>
+                    <textarea type="text" id="content" name="content" placeholder="Write your blog here...">
+                    </textarea>
+                    <input class="save-blog-btn button1" type="submit" value="Save">
+                </form>
+            </div>
+            <img src="../public/images/hand-writing.png" alt="hand writing">
         </div>
-        <div class="middle-line">
-            <div class="small-line"></div>
-            <div class="small-line"></div>
-            <div class="small-line"></div>
-            <div class="small-line"></div>
-            <div class="small-line"></div>
-        </div>
-        <div class="coffee-img">
-            <img src="images/Coffee.png" alt="a red cup of coffee">
-        </div>
-    </div>
+        
+        
     <footer>
         <div class="footer-container">
             <div class="footer-content"> 
                 <div class="media-icons">
-                    <a href="#"><img src="images/twitter.svg"></a>
-                    <a href="#"><img src="images/twitch.svg"></a>
-                    <a href="#"><img src="images/facebook.svg"></a>
-                    <a href="#"><img src="images/instagram.svg"></a>
-                    <a href="#"><img src="images/tiktok.svg"></a>
+                    <a href="#"><img src="../public/images/twitter.svg"></a>
+                    <a href="#"><img src="../public/images/twitch.svg"></a>
+                    <a href="#"><img src="../public/images/facebook.svg"></a>
+                    <a href="#"><img src="../public/images/instagram.svg"></a>
+                    <a href="#"><img src="../public/images/tiktok.svg"></a>
                 </div>
                 <div style="width: 100%; height: 1px; background-color: #f2ebe6;"></div>
                 <div class="footer-text"><p style="padding-top: -20px;">© From new programmer 2024</p></div>
