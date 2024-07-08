@@ -1,0 +1,51 @@
+<%- include("partials/header.ejs") %>
+<% if (posts.length <= 1) { %>
+    <div class="content-create content-blogs" style="height: 72vh;">
+        <div class="all-blogs-head-text">
+            <h2><span style="color: #cc0000;">All</span> Blogs</h2>
+            <h5>Choose a blog to read or delete...</h5>
+            <div class="middle-line-create">
+                <div class="small-line small-line-create"></div>
+                <div class="small-line small-line-create"></div>
+                <div class="small-line small-line-create"></div>
+                <div class="small-line small-line-create"></div>
+                <div class="small-line small-line-create"></div>
+            </div>
+        </div>
+<% } else if (posts.length >= 2) {  %>
+    <div class="content-create content-blogs" style="height: auto;">
+        <div class="all-blogs-head-text">
+            <h2><span style="color: #cc0000;">All</span> Blogs</h2>
+            <h5>Choose a blog to read or delete...</h5>
+            <div class="middle-line-create">
+                <div class="small-line small-line-create"></div>
+                <div class="small-line small-line-create"></div>
+                <div class="small-line small-line-create"></div>
+                <div class="small-line small-line-create"></div>
+                <div class="small-line small-line-create"></div>
+            </div>
+        </div>
+        <% }  %>
+        <% if (posts.length === 0) { %>
+            <div class="blogs-window">
+                <div class="blog">
+                        <h5>So empty here... 😟</h5>
+                </div>
+            </div>
+        <% } else {  %>
+            
+            <div class="blogs-window">
+                <div class="blog">
+                    <%      posts.forEach((post) => { %>
+                    <h5><a href="/view/<%= posts.indexOf(post) %>" class="show-blog"><%= post.title %></a></h5>
+                    <p><%= post.content %></p>
+                    <hr>
+                    <% }); %>
+                </div>
+            </div>
+        
+        <% }  %>
+        
+        <img src="images/book.png" alt="book" style="z-index: -1; width: 30%; height: auto; align-self: center; margin-top: 50px">
+    </div>
+<%- include("partials/footer.ejs") %>
