@@ -1,5 +1,5 @@
-<%- include("partials/header.ejs") %>
-    <% if (locals.postId) { %>
+<% if (locals.postId) { %>
+        <%- include("partials/another-header.ejs") %>
         <div class="content-create">
             <div class="create-head-text">
                 <h2><span style="color: #cc0000;">Edit</span> Blog</h2>
@@ -15,16 +15,19 @@
             <div class="div-form">
                 <form action="/update" method="post">
                     <label for="fname"><h2><span style="color: #cc0000;">Title</span> Of The Blog:</label></h2>
-                    <div><input type="text" id="title" name="title" placeholder="<%= blogTitle %>"><br><br></div>
+                    <div><input type="text" id="title" name="title" placeholder="<%= title %>"><br><br></div>
                     <label for="fname"><h2><span style="color: #cc0000;">Content</span> Of The Blog:</label></h2>
-                    <textarea type="text" id="content" name="content" placeholder="<%= blogContent %>">
+                    <textarea type="text" id="content" name="content" placeholder="Content"><%= content %>
                     </textarea>
-                    <input class="save-blog-btn button1" type="submit" value="Save">
+                    <input hidden type="text" name="index" value="<%= postId %>">
+                    <input class="save-blog-btn button1" type="submit" value="Update">
                 </form>
             </div>
-            <img src="images/hand-writing.png" alt="hand writing">
+            <img src="../images/hand-writing.png" alt="hand writing">
         </div>
+        <%- include("partials/another-footer.ejs") %>
     <% } else { %>
+    <%- include("partials/header.ejs") %>
         <div class="content-create">
             <div class="create-head-text">
                 <h2><span style="color: #cc0000;">Create</span> Blog</h2>
@@ -49,5 +52,5 @@
             </div>
             <img src="images/hand-writing.png" alt="hand writing">
         </div>
+        <%- include("partials/footer.ejs") %>
     <% } %>
-<%- include("partials/footer.ejs") %>

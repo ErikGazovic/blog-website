@@ -1,6 +1,6 @@
 <%- include("partials/header.ejs") %>
 <% if (posts.length <= 1) { %>
-    <div class="content-create content-blogs" style="height: 72vh;">
+    <div class="content-create content-blogs-no-blogs">
         <div class="all-blogs-head-text">
             <h2><span style="color: #cc0000;">All</span> Blogs</h2>
             <h5>Choose a blog to read or delete...</h5>
@@ -29,7 +29,7 @@
         <% if (posts.length === 0) { %>
             <div class="blogs-window">
                 <div class="blog">
-                        <h5>So empty here... 😟</h5>
+                        <h5>There are no blogs to show... : (</h5>
                 </div>
             </div>
         <% } else {  %>
@@ -46,6 +46,6 @@
         
         <% }  %>
         
-        <img src="images/book.png" alt="book" style="z-index: -1; width: 30%; height: auto; align-self: center; margin-top: 50px">
+        <div class="all-blogs-img"><img src="images/book.png" alt="book"></div>
     </div>
 <%- include("partials/footer.ejs") %>
