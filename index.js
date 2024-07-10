@@ -40,7 +40,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // Home
 app.get("/", (req, res) => {
-    res.render("index.ejs");
+    res.render("/index.ejs");
 });
 
 app.get("/all-blogs", (req, res) => {
