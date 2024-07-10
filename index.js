@@ -46,13 +46,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/all-blogs", (req, res) => {
-    res.render("views/all-blogs.ejs", {posts: posts} );
+    res.render("all-blogs.ejs", {posts: posts} );
 });
 
 app.get("/view/:id", (req, res) => {
     let index = req.params.id;
     let post = posts[index];
-    res.render("views/view.ejs", {postId: index, title: post.title, content: post.content});
+    res.render("view.ejs", {postId: index, title: post.title, content: post.content});
 });
 
 // Delete Post
@@ -66,7 +66,7 @@ app.post("/delete", (req, res) => {
 app.get("/edit/:id", (req, res) => {
     let index = req.params.id;
     let post = posts[index];
-    res.render("views/create-blog.ejs", {postId: index, title: post.title, content: post.content});
+    res.render("create-blog.ejs", {postId: index, title: post.title, content: post.content});
 });
 
 // Update
@@ -80,7 +80,7 @@ app.post("/update", (req, res) => {
 
 // Create Post Page
 app.get("/create-blog", (req, res) => {
-    res.render("views/create-blog.ejs");
+    res.render("create-blog.ejs");
 });
 
 // Save Post
@@ -95,11 +95,11 @@ app.post("/save", (req, res) => {
 
 
 app.get("/about", (req, res) => {
-    res.render("views/about.ejs");
+    res.render("about.ejs");
 });
 
 app.get("/contact", (req, res) => {
-    res.render("views/contact.ejs");
+    res.render("contact.ejs");
 });
 
 app.listen(port, () => {
